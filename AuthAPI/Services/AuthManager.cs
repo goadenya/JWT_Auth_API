@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AuthAPI.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using MyPortfolio_AuthAPI.Data.Entities;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace MyPortfolio_AuthAPI.Services
 {
-    public class AuthManager
+    public class AuthManager : IAuthManager
     {
         private readonly IConfiguration _config;
         private readonly SignInManager<User> _signInManager;
@@ -24,7 +25,7 @@ namespace MyPortfolio_AuthAPI.Services
             _signInManager = signInManager;
             _userManager = userManager;
         }
-        internal async Task<LoginResponse> SignInUser(LoginModel loginModel)
+        public async Task<LoginResponse> SignInUser(LoginModel loginModel)
         {
             User user = loginModel.User.Contains("@") ? await _userManager.FindByEmailAsync(loginModel.User) : await _userManager.FindByNameAsync(loginModel.User);
             if (user != null)
