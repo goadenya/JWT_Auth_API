@@ -1,13 +1,13 @@
 ﻿
+using AuthAPI.Data.Entities;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MyPortfolio_AuthAPI.Data.Entities;
 
-[assembly: HostingStartup(typeof(MyPortfolio_AuthAPI.Data.IdentityHostingStartup))]
-namespace MyPortfolio_AuthAPI.Data
+[assembly: HostingStartup(typeof(AuthAPI.Data.IdentityHostingStartup))]
+namespace AuthAPI.Data
 {
     public class IdentityHostingStartup : IHostingStartup
     {

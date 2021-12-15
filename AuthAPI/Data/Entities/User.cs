@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace MyPortfolio_AuthAPI.Data.Entities
+namespace AuthAPI.Data.Entities
 {
     public class User : IdentityUser
     {

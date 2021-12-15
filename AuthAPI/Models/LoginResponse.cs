@@ -1,4 +1,4 @@
-﻿namespace MyPortfolio_AuthAPI.Models
+﻿namespace AuthAPI.Models
 {
     public class LoginResponse
     {

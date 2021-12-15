@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace MyPortfolio_AuthAPI
+namespace AuthAPI
 {
     public class Program
     {

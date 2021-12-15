@@ -2,8 +2,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using MyPortfolio_AuthAPI.Data.Entities;
-using MyPortfolio_AuthAPI.Models;
+using AuthAPI.Data.Entities;
+using AuthAPI.Models;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
@@ -11,7 +11,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyPortfolio_AuthAPI.Services
+namespace AuthAPI.Services
 {
     public class AuthManager : IAuthManager
     {

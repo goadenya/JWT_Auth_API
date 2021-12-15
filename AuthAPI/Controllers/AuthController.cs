@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AuthAPI.Models;
+using AuthAPI.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MyPortfolio_AuthAPI.Models;
-using MyPortfolio_AuthAPI.Services;
 using System.Threading.Tasks;
 
-namespace MyPortfolio_AuthAPI.Controllers
+namespace AuthAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

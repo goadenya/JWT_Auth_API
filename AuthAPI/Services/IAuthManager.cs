@@ -1,4 +1,4 @@
-﻿using MyPortfolio_AuthAPI.Models;
+﻿using AuthAPI.Models;
 using System.Threading.Tasks;
 
 namespace AuthAPI.Services

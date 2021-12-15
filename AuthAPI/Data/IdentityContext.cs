@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AuthAPI.Data.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MyPortfolio_AuthAPI.Data.Entities;
 using System;
 
-namespace MyPortfolio_AuthAPI.Data
+namespace AuthAPI.Data
 {
     public class IdentityContext : IdentityDbContext<Data.Entities.User>
     {

@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-using System;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MyPortfolio_AuthAPI.Migrations
+#nullable disable
+
+namespace AuthAPI.Migrations
 {
     public partial class init : Migration
     {
@@ -155,12 +157,12 @@ namespace MyPortfolio_AuthAPI.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "root-0c0-aa65-4af8-bd17-00bd9344e575", "1d89651d-2ff0-4861-9200-6f067eca065d", "root", "ROOT" });
+                values: new object[] { "root-0c0-aa65-4af8-bd17-00bd9344e575", "e92f912c-41b0-4b18-b320-aab401535d49", "root", "ROOT" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "admin-c0-aa65-4af8-bd17-00bd9344e575", 0, "f37bcaf7-9dc4-4c10-a5d2-208aa040bc11", "admin@core.api", true, false, null, "ADMIN@CORE.API", "ADMIN", "AQAAAAEAACcQAAAAEPExswNldIxmPWEDkiz0sTshgY2j6Tj9jk9rqoUdmRIjc2TqFD28fMGk6iM6JO/+HQ==", null, false, "ed456488-22fb-4158-b194-842eaf9b4371", false, "admin" });
+                values: new object[] { "admin-c0-aa65-4af8-bd17-00bd9344e575", 0, "d50d9d6a-3057-45a0-ac06-e11615ff1515", "admin@core.api", true, false, null, "ADMIN@CORE.API", "ADMIN", "AQAAAAEAACcQAAAAENx3CTEqLSm0OpMXlNjousuz5oR9jp4X6+FJSXBN1j61jGJTt83jm5xL+gTRG3eXYg==", null, false, "28b57d9b-8c85-4372-a9e9-2b2786eff5d1", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",

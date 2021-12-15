@@ -8,7 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 
-namespace MyPortfolio_AuthAPI
+namespace AuthAPI
 {
     public class Startup
     {
